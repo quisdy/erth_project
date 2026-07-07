@@ -1,335 +1,451 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Сервисный инженер — Гид по профессии</title>
-<meta name="description" content="Кто такой сервисный инженер в Эр телеком Холдинг, чем занимается, что должен уметь и как начать карьеру.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сервисный инженер — Гид по профессии</title>
+  <meta name="description" content="Кто такой сервисный инженер в телекоме, чем занимается, что должен уметь и как начать карьеру.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="container">
-
-  <!-- Block 1: Hero -->
-  <section class="hero">
-    <p class="hero-label">Профессия</p>
-    <h1><span>Сервисный инженер</span></h1>
-    <p class="hero-sub">Специалист, который обеспечивает бесперебойную работу телеком-оборудования и инфраструктуры — от приёмки на складе до круглосуточной поддержки клиентов.</p>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- Block 2: Кто это простыми словами -->
-  <section class="section">
-    <p class="section-label">Введение</p>
-    <h2 class="section-title">Кто это простыми словами</h2>
-    <div class="section-text section-text-full">
-      <p><strong>Сервисный инженер</strong> — это технический эксперт, который работает с сетевым и серверным оборудованием, системами хранения данных и линиями связи.</p>
-      <p>Он не только настраивает и ремонтирует устройства, но и помогает клиентам (внешним и внутренним) быстро решать проблемы.</p>
-      <p>В Эр телеком Холдинг такой специалист — связующее звено между технической инфраструктурой и бизнес-задачами: он видит, как оборудование влияет на сервисы и доходы компании.</p>
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">Сервисный инженер</span>
+      <div class="nav-links">
+        <a href="#about">О профессии</a>
+        <a href="#tasks">Задачи</a>
+        <a href="#skills">Навыки</a>
+        <a href="#career">Карьера</a>
+        <a href="#day">День</a>
+      </div>
     </div>
-  </section>
+  </nav>
 
-  <div class="divider"></div>
+  <div class="container">
 
-  <!-- Block 3: Рабочие задачи -->
-  <section class="section">
-    <p class="section-label">Задачи</p>
-    <h2 class="section-title">5–7 рабочих задач</h2>
-    <div class="tasks-list">
-      <div class="task-item">
-        <div class="task-num">1</div>
-        <div class="task-content">
-          <h4>Диагностика и устранение неисправностей</h4>
+    <!-- 1. HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <p class="section-label">Профессия</p>
+      <h1 class="hero-title">
+        <span class="gradient-text">Сервисный</span> инженер
+      </h1>
+      <p class="hero-subtitle">
+        Специалист, который обеспечивает бесперебойную работу телеком-оборудования и инфраструктуры — от приёмки на складе до круглосуточной поддержки клиентов.
+      </p>
+      <a href="#about" class="btn-primary">Узнать больше</a>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="divider"></div>
+
+    <!-- 2. WHO -->
+    <section class="section reveal" id="about">
+      <p class="section-label">Введение</p>
+      <h2 class="section-title">Кто это простыми словами</h2>
+      <div class="glass-card text-card">
+        <p>
+          <span class="accent-blue">Сервисный инженер</span> — это технический эксперт, который работает с сетевым и серверным оборудованием, системами хранения данных и линиями связи.
+        </p>
+        <p>
+          Он не только настраивает и ремонтирует устройства, но и помогает клиентам (внешним и внутренним) быстро решать проблемы.
+        </p>
+        <p>
+          В <span class="accent-coral">Эр телеком Холдинг</span> такой специалист — связующее звено между технической инфраструктурой и бизнес-задачами: он видит, как оборудование влияет на сервисы и доходы компании.
+        </p>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="divider"></div>
+
+    <!-- 3. TASKS -->
+    <section class="section reveal" id="tasks">
+      <p class="section-label">Рабочие задачи</p>
+      <h2 class="section-title">Чем занимается</h2>
+      <p class="section-desc">Сервисный инженер решает задачи из семи ключевых областей:</p>
+      <div class="grid-2col">
+        <div class="glass-card task-card">
+          <div class="task-icon icon-diag"></div>
+          <h3>Диагностика и устранение неисправностей</h3>
           <p>Локализация проблем на физическом уровне и в сетевых протоколах.</p>
         </div>
-      </div>
-      <div class="task-item">
-        <div class="task-num">2</div>
-        <div class="task-content">
-          <h4>Настройка и обновление оборудования</h4>
+        <div class="glass-card task-card">
+          <div class="task-icon icon-config"></div>
+          <h3>Настройка и обновление оборудования</h3>
           <p>Установка конфигураций, прошивок, плановое техническое обслуживание.</p>
         </div>
-      </div>
-      <div class="task-item">
-        <div class="task-num">3</div>
-        <div class="task-content">
-          <h4>Техническая поддержка клиентов (L1–L3)</h4>
+        <div class="glass-card task-card">
+          <div class="task-icon icon-support"></div>
+          <h3>Техническая поддержка клиентов (L1–L3)</h3>
           <p>Обработка заявок, удалённое и выездное решение инцидентов.</p>
         </div>
-      </div>
-      <div class="task-item">
-        <div class="task-num">4</div>
-        <div class="task-content">
-          <h4>Мониторинг инфраструктуры</h4>
+        <div class="glass-card task-card">
+          <div class="task-icon icon-monitor"></div>
+          <h3>Мониторинг инфраструктуры</h3>
           <p>Контроль состояния каналов, серверов, систем электропитания и охлаждения.</p>
         </div>
-      </div>
-      <div class="task-item">
-        <div class="task-num">5</div>
-        <div class="task-content">
-          <h4>Составление отчётов и документации</h4>
+        <div class="glass-card task-card">
+          <div class="task-icon icon-docs"></div>
+          <h3>Составление отчётов и документации</h3>
           <p>Маршруты обхода, акты замены, инструкции для пользователей.</p>
         </div>
-      </div>
-      <div class="task-item">
-        <div class="task-num">6</div>
-        <div class="task-content">
-          <h4>Работа с поставщиками и подрядчиками</h4>
+        <div class="glass-card task-card">
+          <div class="task-icon icon-vendor"></div>
+          <h3>Работа с поставщиками и подрядчиками</h3>
           <p>Контроль качества оборудования, гарантийные вопросы, ЗИП.</p>
         </div>
-      </div>
-      <div class="task-item task-item-full">
-        <div class="task-num">7</div>
-        <div class="task-content">
-          <h4>Участие в модернизации</h4>
+        <div class="glass-card task-card full-width">
+          <div class="task-icon icon-upgrade"></div>
+          <h3>Участие в модернизации</h3>
           <p>Замена устаревших узлов на современные, оптимизация топологии сети.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="divider"></div>
+    <!-- DIVIDER -->
+    <div class="divider"></div>
 
-  <!-- Block 4: Hard Skills -->
-  <section class="section">
-    <p class="section-label">Навыки</p>
-    <h2 class="section-title">Hard Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3><span class="dot dot-teal"></span>Сеть и протоколы</h3>
-        <div class="skill-item"><span class="skill-bullet bullet-teal"></span><span>TCP/IP, BGP, OSPF, MPLS, Ethernet</span></div>
-        <div class="skill-item"><span class="skill-bullet bullet-teal"></span><span>Работа с Cisco, Huawei, Eltex, D-Link</span></div>
-        <div class="skill-item"><span class="skill-bullet bullet-teal"></span><span>Пассивное и активное сетевое оборудование</span></div>
+    <!-- 4. HARD SKILLS -->
+    <section class="section reveal" id="skills">
+      <p class="section-label">Hard Skills</p>
+      <h2 class="section-title">Технические навыки</h2>
+      <div class="skills-list glass-card">
+        <div class="skill-item">
+          <span class="skill-dot"></span>
+          <span class="skill-text">знание сетевых протоколов (<span class="mono">TCP/IP, BGP, OSPF, MPLS, Ethernet</span>)</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot"></span>
+          <span class="skill-text">работа с ОС (<span class="mono">Linux, Windows Server</span>)</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot"></span>
+          <span class="skill-text">пассивное и активное сетевое оборудование (<span class="mono">Cisco, Huawei, Eltex, D-Link</span>)</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot"></span>
+          <span class="skill-text">навыки диагностики — анализаторы спектра, оптические тестеры, <span class="mono">ping, traceroute, Wireshark</span></span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot"></span>
+          <span class="skill-text">системы мониторинга (<span class="mono">Zabbix, Nagios, Grafana</span>)</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot"></span>
+          <span class="skill-text">основы электробезопасности и заземления</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot"></span>
+          <span class="skill-text">технический английский (документация, интерфейсы)</span>
+        </div>
       </div>
-      <div class="skill-card">
-        <h3><span class="dot dot-yellow"></span>ОС и диагностика</h3>
-        <div class="skill-item"><span class="skill-bullet bullet-yellow"></span><span>Linux, Windows Server</span></div>
-        <div class="skill-item"><span class="skill-bullet bullet-yellow"></span><span>Анализаторы спектра, оптические тестеры</span></div>
-        <div class="skill-item"><span class="skill-bullet bullet-yellow"></span><span>ping, traceroute, Wireshark</span></div>
-      </div>
-      <div class="skill-card">
-        <h3><span class="dot dot-purple"></span>Мониторинг и безопасность</h3>
-        <div class="skill-item"><span class="skill-bullet bullet-purple"></span><span>Zabbix, Nagios, Grafana</span></div>
-        <div class="skill-item"><span class="skill-bullet bullet-purple"></span><span>Основы электробезопасности и заземления</span></div>
-        <div class="skill-item"><span class="skill-bullet bullet-purple"></span><span>Технический английский (документация)</span></div>
-      </div>
-      <div class="skill-card">
-        <h3><span class="dot dot-blue"></span>Дополнительно</h3>
-        <div class="skill-item"><span class="skill-bullet bullet-blue"></span><span>Python (автоматизация рутины)</span></div>
-        <div class="skill-item"><span class="skill-bullet bullet-blue"></span><span>SQL (работа с БД клиентов)</span></div>
-        <div class="skill-item"><span class="skill-bullet bullet-blue"></span><span>Docker, виртуализация</span></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="divider"></div>
+    <!-- DIVIDER -->
+    <div class="divider"></div>
 
-  <!-- Block 5: Soft Skills -->
-  <section class="section">
-    <p class="section-label">Личные качества</p>
-    <h2 class="section-title">Soft Skills</h2>
-    <div class="grid-2">
-      <div class="card">
-        <div class="card-icon bg-teal">💬</div>
-        <h3>Коммуникативность</h3>
-        <ul><li>Объяснять сложные вещи понятным языком даже нетехническим специалистам</li></ul>
+    <!-- 5. SOFT SKILLS -->
+    <section class="section reveal" id="soft">
+      <p class="section-label">Soft Skills</p>
+      <h2 class="section-title">Личные качества</h2>
+      <div class="grid-3col">
+        <div class="glass-card soft-card">
+          <div class="soft-icon icon-chat"></div>
+          <h3>Коммуникативность</h3>
+          <p>Объяснять сложные вещи понятным языком даже нетехническим специалистам.</p>
+        </div>
+        <div class="glass-card soft-card">
+          <div class="soft-icon icon-stress"></div>
+          <h3>Стрессоустойчивость</h3>
+          <p>Работать с авариями в сжатые сроки без потери качества.</p>
+        </div>
+        <div class="glass-card soft-card">
+          <div class="soft-icon icon-brain"></div>
+          <h3>Системное мышление</h3>
+          <p>Видеть взаимосвязи оборудования, софта и бизнес-процессов.</p>
+        </div>
+        <div class="glass-card soft-card">
+          <div class="soft-icon icon-client"></div>
+          <h3>Клиентоориентированность</h3>
+          <p>Помнить, что за каждым инцидентом стоит пользователь.</p>
+        </div>
+        <div class="glass-card soft-card">
+          <div class="soft-icon icon-org"></div>
+          <h3>Самоорганизация</h3>
+          <p>Вести несколько задач одновременно и приоритезировать.</p>
+        </div>
+        <div class="glass-card soft-card">
+          <div class="soft-icon icon-responsible"></div>
+          <h3>Ответственность</h3>
+          <p>За жизнь оборудования и доступность сервисов.</p>
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon bg-yellow">⚡</div>
-        <h3>Стрессоустойчивость</h3>
-        <ul><li>Работать с авариями в сжатые сроки</li></ul>
-      </div>
-      <div class="card">
-        <div class="card-icon bg-blue">🧠</div>
-        <h3>Системное мышление</h3>
-        <ul><li>Видеть взаимосвязи оборудования, софта и бизнес-процессов</li></ul>
-      </div>
-      <div class="card">
-        <div class="card-icon bg-teal">🤝</div>
-        <h3>Клиентоориентированность</h3>
-        <ul><li>Помнить, что за каждым инцидентом стоит пользователь</li></ul>
-      </div>
-      <div class="card">
-        <div class="card-icon bg-yellow">📋</div>
-        <h3>Самоорганизация</h3>
-        <ul><li>Вести несколько задач одновременно и приоритезировать</li></ul>
-      </div>
-      <div class="card">
-        <div class="card-icon bg-blue">🎯</div>
-        <h3>Ответственность</h3>
-        <ul><li>За жизнь оборудования и доступность сервисов</li></ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="divider"></div>
+    <!-- DIVIDER -->
+    <div class="divider"></div>
 
-  <!-- Block 6: Как начать карьеру -->
-  <section class="section">
-    <p class="section-label">Карьера</p>
-    <h2 class="section-title">Как начать карьеру студенту</h2>
-    <div class="grid-3">
-      <div class="card">
-        <div class="card-icon bg-blue">🎓</div>
-        <h3>Базовое образование</h3>
-        <ul>
-          <li>Сети и телекоммуникации</li>
-          <li>Радиотехника</li>
-          <li>Программирование встраиваемых систем</li>
-        </ul>
+    <!-- 6. CAREER PATH -->
+    <section class="section reveal" id="career">
+      <p class="section-label">Старт карьеры</p>
+      <h2 class="section-title">Как начать карьеру студенту</h2>
+      <div class="career-steps">
+        <div class="career-step glass-card">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Базовое образование</h3>
+            <p>Технические специальности — сети и телекоммуникации, радиотехника, программирование встраиваемых систем.</p>
+          </div>
+        </div>
+        <div class="career-step glass-card">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Курсы и сертификаты</h3>
+            <p><span class="mono">CCNA, CCNP, Linux Professional</span>, курсы по сетям от Huawei / Eltex.</p>
+          </div>
+        </div>
+        <div class="career-step glass-card">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Практика на стенде</h3>
+            <p>Собрать домашнюю лабораторию — коммутатор, маршрутизатор, виртуальные машины.</p>
+          </div>
+        </div>
+        <div class="career-step glass-card">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3>Стажировка в Эр телеком Холдинг</h3>
+            <p>Реальная работа с оборудованием под наставничеством опытных инженеров.</p>
+          </div>
+        </div>
+        <div class="career-step glass-card">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h3>Развитие смежных навыков</h3>
+            <p><span class="mono">Python</span> (автоматизация рутины), <span class="mono">SQL</span> (работа с базами данных клиентов).</p>
+          </div>
+        </div>
+        <div class="career-step glass-card">
+          <div class="step-num">6</div>
+          <div class="step-content">
+            <h3>Участие в соревнованиях</h3>
+            <p>Хакатоны и соревнования по сетевым технологиям и кибербезопасности.</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon bg-teal">📜</div>
-        <h3>Курсы и сертификаты</h3>
-        <ul>
-          <li>CCNA, CCNP</li>
-          <li>Linux Professional</li>
-          <li>Курсы от Huawei / Eltex</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-icon bg-yellow">🔬</div>
-        <h3>Практика на стенде</h3>
-        <ul>
-          <li>Домашняя лаборатория</li>
-          <li>Коммутатор, маршрутизатор</li>
-          <li>Виртуальные машины</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-icon bg-blue">💼</div>
-        <h3>Стажировка</h3>
-        <ul>
-          <li>Реальная работа с оборудованием</li>
-          <li>Наставничество</li>
-          <li>Эр телеком Холдинг</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-icon bg-teal">🚀</div>
-        <h3>Смежные навыки</h3>
-        <ul>
-          <li>Python (автоматизация)</li>
-          <li>SQL (базы данных)</li>
-          <li>Английский язык</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-icon bg-yellow">🏆</div>
-        <h3>Хакатоны и соревнования</h3>
-        <ul>
-          <li>Сетевые технологии</li>
-          <li>Кибербезопасность</li>
-          <li>CTF-соревнования</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="divider"></div>
+    <!-- DIVIDER -->
+    <div class="divider"></div>
 
-  <!-- Block 7: Один день из жизни -->
-  <section class="section">
-    <p class="section-label">Реальность</p>
-    <h2 class="section-title">Один день из жизни</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-time">8:30</div>
-        <div class="timeline-desc">Приём смены: просмотр ночных логов и незакрытых инцидентов.</div>
+    <!-- 7. DAY IN LIFE -->
+    <section class="section reveal" id="day">
+      <p class="section-label">Распорядок</p>
+      <h2 class="section-title">Один день из жизни</h2>
+      <div class="timeline">
+        <div class="timeline-item" tabindex="0">
+          <div class="timeline-time">8:30</div>
+          <div class="timeline-content glass-card">
+            <h3>Приём смены</h3>
+            <p class="timeline-detail">Просмотр ночных логов и незакрытых инцидентов.</p>
+          </div>
+        </div>
+        <div class="timeline-item" tabindex="0">
+          <div class="timeline-time">9:15</div>
+          <div class="timeline-content glass-card">
+            <h3>Плановый обход ЦОДа</h3>
+            <p class="timeline-detail">Проверка температуры, влажности, работы ИБП.</p>
+          </div>
+        </div>
+        <div class="timeline-item" tabindex="0">
+          <div class="timeline-time">10:00</div>
+          <div class="timeline-content glass-card">
+            <h3>Заявка от оператора</h3>
+            <p class="timeline-detail">«Упал канал на удалённой площадке» — удалённая диагностика, выяснение, что проблема на стороне провайдера.</p>
+          </div>
+        </div>
+        <div class="timeline-item" tabindex="0">
+          <div class="timeline-time">12:30</div>
+          <div class="timeline-content glass-card">
+            <h3>Обед</h3>
+            <p class="timeline-detail">Перерыв.</p>
+          </div>
+        </div>
+        <div class="timeline-item" tabindex="0">
+          <div class="timeline-time">13:15</div>
+          <div class="timeline-content glass-card">
+            <h3>Встреча с заказчиком</h3>
+            <p class="timeline-detail">Запуск нового филиала — согласование схемы включения и списка оборудования.</p>
+          </div>
+        </div>
+        <div class="timeline-item" tabindex="0">
+          <div class="timeline-time">15:00</div>
+          <div class="timeline-content glass-card">
+            <h3>Замена оборудования</h3>
+            <p class="timeline-detail">Замена отказавшего модуля в коммутаторе (выезд на объект или удалённое переключение на резерв).</p>
+          </div>
+        </div>
+        <div class="timeline-item" tabindex="0">
+          <div class="timeline-time">16:30</div>
+          <div class="timeline-content glass-card">
+            <h3>Оформление документации</h3>
+            <p class="timeline-detail">Акт выполненных работ, предложение по замене устаревшего маршрутизатора.</p>
+          </div>
+        </div>
+        <div class="timeline-item" tabindex="0">
+          <div class="timeline-time">17:45</div>
+          <div class="timeline-content glass-card">
+            <h3>Плановый созвон</h3>
+            <p class="timeline-detail">Обсуждение сложных инцидентов за неделю с командой.</p>
+          </div>
+        </div>
+        <div class="timeline-item" tabindex="0">
+          <div class="timeline-time">18:15</div>
+          <div class="timeline-content glass-card">
+            <h3>Сдача смены</h3>
+            <p class="timeline-detail">Передача дежурства следующей смене.</p>
+          </div>
+        </div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-time">9:15</div>
-        <div class="timeline-desc">Плановый обход ЦОДа (проверка температуры, влажности, работы ИБП).</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">10:00</div>
-        <div class="timeline-desc">Заявка от оператора: «упал канал на удалённой площадке» — удалённая диагностика, выяснение, что проблема на стороне провайдера.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">12:30</div>
-        <div class="timeline-desc">Обед.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">13:15</div>
-        <div class="timeline-desc">Встреча с заказчиком по запуску нового филиала: согласование схемы включения и списка оборудования.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">15:00</div>
-        <div class="timeline-desc">Замена отказавшего модуля в коммутаторе (выезд на объект или удалённое переключение на резерв).</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">16:30</div>
-        <div class="timeline-desc">Оформление документации: акт выполненных работ, предложение по замене устаревшего маршрутизатора.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">17:45</div>
-        <div class="timeline-desc">Плановый созвон с командой, обсуждение сложных инцидентов за неделю.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">18:15</div>
-        <div class="timeline-desc">Сдача смены и передача дежурства.</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="divider"></div>
+    <!-- DIVIDER -->
+    <div class="divider"></div>
 
-  <!-- Block 8: Почему роль важна -->
-  <section class="section">
-    <p class="section-label">Ценность</p>
-    <h2 class="section-title">Почему роль важна для Эр телеком Холдинг</h2>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="icon">🛡️</div>
-        <h4>Надёжность</h4>
-        <p>Каждый исправный узел — это минус к оттоку клиентов и плюс к репутации.</p>
+    <!-- 8. WHY IMPORTANT -->
+    <section class="section reveal" id="importance">
+      <p class="section-label">Ценность</p>
+      <h2 class="section-title">Почему роль важна для Эр телеком Холдинг</h2>
+      <div class="grid-3col">
+        <div class="glass-card importance-card">
+          <div class="importance-num" data-count="100">0</div>
+          <h3>Надёжность</h3>
+          <p>Каждый исправный узел — минус к оттоку клиентов и плюс к репутации.</p>
+        </div>
+        <div class="glass-card importance-card">
+          <div class="importance-num" data-count="60">0</div>
+          <h3>Скорость реакции</h3>
+          <p>Сервисный инженер напрямую влияет на время восстановления услуг (MTTR).</p>
+        </div>
+        <div class="glass-card importance-card">
+          <div class="importance-num" data-count="40">0</div>
+          <h3>Экономия</h3>
+          <p>Своевременное техобслуживание снижает капитальные затраты и аварийные простои.</p>
+        </div>
+        <div class="glass-card importance-card">
+          <div class="importance-num" data-count="90">0</div>
+          <h3>Внедрение новых сервисов</h3>
+          <p>Без грамотной настройки невозможно запускать IoT, видеонаблюдение, VPN.</p>
+        </div>
+        <div class="glass-card importance-card">
+          <div class="importance-num" data-count="85">0</div>
+          <h3>Клиентоориентированность</h3>
+          <p>Инженер — лицо компании при выездных работах, он создаёт впечатление о бренде.</p>
+        </div>
+        <div class="glass-card importance-card">
+          <div class="importance-num" data-count="100">0</div>
+          <h3>База для роста</h3>
+          <p>Тысячи километров кабелей и сотни узлов — инженеры формируют «память» сети.</p>
+        </div>
       </div>
-      <div class="why-card">
-        <div class="icon">⏱️</div>
-        <h4>Скорость реакции</h4>
-        <p>Сервисный инженер напрямую влияет на время восстановления услуг (MTTR).</p>
-      </div>
-      <div class="why-card">
-        <div class="icon">💰</div>
-        <h4>Экономия</h4>
-        <p>Своевременное ТО и замена оборудования снижают капитальные затраты и аварийные простои.</p>
-      </div>
-      <div class="why-card">
-        <div class="icon">🌐</div>
-        <h4>Новые сервисы</h4>
-        <p>Без грамотной настройки невозможно запускать IoT, видеонаблюдение, VPN.</p>
-      </div>
-      <div class="why-card">
-        <div class="icon">🤝</div>
-        <h4>Клиентоориентированность</h4>
-        <p>Инженер — лицо компании при выездных работах, он создаёт впечатление о бренде.</p>
-      </div>
-      <div class="why-card">
-        <div class="icon">📈</div>
-        <h4>База для роста</h4>
-        <p>Тысячи километров кабелей и сотни узлов — сервисные инженеры формируют «память» сети.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="divider"></div>
+    <!-- DIVIDER -->
+    <div class="divider"></div>
 
-  <!-- Quote -->
-  <section class="quote-section">
-    <blockquote>Сервисный инженер — это не просто «ремонтник»,<br>а <span>хранитель</span> сети и <span>лицо</span> компании</blockquote>
-    <cite>— Эр телеком Холдинг</cite>
-  </section>
+    <!-- QUOTE -->
+    <section class="section quote-section reveal">
+      <blockquote class="quote-text">
+        Сервисный инженер — это не просто техник,<br>
+        а <span class="gradient-text">архитектор стабильности</span> цифровой инфраструктуры
+      </blockquote>
+      <cite class="quote-cite">— Эр телеком Холдинг</cite>
+    </section>
 
-  <footer>
-    <p>© 2026 Сервисный инженер — Гид по профессии</p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Сервисный инженер — Гид по профессии</p>
   </footer>
 
-</div>
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Наверх">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+  </button>
 
+  <script>
+    // Scroll reveal
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Navbar shadow on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Back to top
+    const backBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backBtn.classList.toggle('visible', window.scrollY > 500);
+    });
+    backBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Counter animation
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.count);
+          if (!target) return;
+          let current = 0;
+          const step = Math.ceil(target / 60);
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+            el.textContent = current + '%';
+          }, 20);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.importance-num').forEach(el => counterObserver.observe(el));
+
+    // Timeline expand on click
+    document.querySelectorAll('.timeline-item').forEach(item => {
+      item.addEventListener('click', function() {
+        this.classList.toggle('expanded');
+      });
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
